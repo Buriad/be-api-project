@@ -25,7 +25,7 @@ const foodModel = mongoose.Schema({
         type: String,
         required: [true, "Enter the image!"],
     },
-    tumb_img: {
+    thumb_img: {
         type: String,
         required: [true, "Enter the tumbimg!"],
     },
@@ -42,4 +42,4 @@ const foodModel = mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model("foodmodels", foodModel);
+module.exports = mongoose.model("food_info", foodModel);

@@ -4,8 +4,7 @@ const router = express.Router();
 const mongoose = require("mongoose");
 
 const getFood = (req, res, next) => {
-    const id = req.query.id;
-    foodModel.find({ _id: id }, (err, data) => {
+    foodModel.find({}, (err, data) => {
         if (err) {
             throw err;
         } else {
